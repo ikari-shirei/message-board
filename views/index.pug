@@ -1,10 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  h2 Users
-  ul
-  each message in messages
-    li= message.user 
-  hr
-  a(href="/new") New user
+  h1.title= title
+  div#all-content
+    each message in messages
+      div.container
+        h2.user-header= message.user 
+        p= message.text
+        div.time-date-container
+          p= message.added.toLocaleDateString()
+          p= message.added.toLocaleTimeString()
+  hr.hr
+  button.button
+    a(href="/new") New user

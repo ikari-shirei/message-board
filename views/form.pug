@@ -2,11 +2,14 @@ extends layout
 
 block content 
   form(action='/new', method='POST')
-    h1= title
-    p User: 
+    h1.title-form= title
+    div.form-container
+      h3 User: 
       input(type='text', name='user', value='')
-    p Message: 
+    div.form-container
+      h3 Message: 
       input(type='text', name='messageText', value='')
-    input(type='submit', value='Submit')  
-    hr
-    a(href="/") Return users list
+    input.button-submit(type='submit', value='Submit')  
+    hr.hr-form
+    button.button-return
+      a(href="/") Return users list

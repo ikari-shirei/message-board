@@ -1,8 +1,114 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  background: #1c2f36;
+  color: aliceblue;
+  box-sizing: border-box;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.title {
+  color: violet;
+  margin-bottom: 0;
+}
+
+#all-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 0.5rem;
+  padding-left: 0;
+}
+
+.user-header {
+  margin-bottom: 0;
+}
+
+.time-date-container {
+  display: flex;
+}
+
+.time-date-container p {
+  margin: 0;
+  color: rgba(240, 248, 255, 0.5);
+}
+
+.time-date-container p:nth-child(2) {
+  padding-left: 1rem;
+}
+
+.hr {
+  padding: 0;
+  margin: 24px 0 24px 0;
+  color: violet;
+}
+
+.button {
+  background-color: violet;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+a {
+  color: #1c2f36;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Form */
+
+.title-form {
+  color: aliceblue;
+  margin-bottom: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input {
+  max-width: 300px;
+  margin-bottom: 8px;
+  padding: 0.3rem;
+}
+
+.form-container h3 {
+  color: #00b7ff;
+}
+
+.hr-form {
+  padding: 0;
+  margin: 24px 0 24px 0;
+  color: #00b7ff;
+}
+
+.button-submit {
+  background-color: #00b7ff;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 15px;
+  margin-top: 16px;
+  color: #1c2f36;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button-return {
+  background-color: aliceblue;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
 }
