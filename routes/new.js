@@ -8,12 +8,17 @@ router.get('/', function (req, res, next) {
 })
 
 router.post('/', function (req, res, next) {
-  console.log(req.body)
+  const newUser = req.body.user ? req.body.user : 'Anonymous'
+  const newMessage = req.body.user
+    ? req.body.user
+    : 'There is nothing in here...'
+
   indexFile.messages.push({
-    text: req.body.messageText,
-    user: req.body.user,
+    text: newMessage,
+    user: newUser,
     added: new Date(),
   })
+
   res.status(200)
   res.redirect('/')
 })
