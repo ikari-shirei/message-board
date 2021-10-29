@@ -1,0 +1,12 @@
+extends layout
+
+block content 
+  form(action='/new', method='POST')
+    h1= title
+    p User: 
+      input(type='text', name='user', value='')
+    p Message: 
+      input(type='text', name='messageText', value='')
+    input(type='submit', value='Submit')  
+    hr
+    a(href="http://localhost:3000/") Return users list
