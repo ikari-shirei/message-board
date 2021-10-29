@@ -98,6 +98,7 @@ a {
   color: #1c2f36;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button-return {
