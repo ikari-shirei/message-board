@@ -9,8 +9,8 @@ router.get('/', function (req, res, next) {
 
 router.post('/', function (req, res, next) {
   const newUser = req.body.user ? req.body.user : 'Anonymous'
-  const newMessage = req.body.user
-    ? req.body.user
+  const newMessage = req.body.messageText
+    ? req.body.messageText
     : 'There is nothing in here...'
 
   indexFile.messages.push({
